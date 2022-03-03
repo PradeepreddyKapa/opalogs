@@ -2,7 +2,7 @@ package policy["com.styra.kubernetes.mutating"].rules.rules
 
 enforce[decision] {
   parameters := {
-    "cpu_limit": ""
+    "cpu_limit": "250mi"
   }
 
   data.library.v1.kubernetes.mutating.v1.add_default_cpu_limit[decision]
